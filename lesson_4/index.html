@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 4</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__img">
+			<img src="img/react.png" alt="React">
+		</div>
+		<ul class="header__menu">
+			<li class="header__item"><a href="#react" class="header__link">What React is</a></li>
+			<li class="header__item"><a href="#components" class="header__link">Components</a></li>
+			<li class="header__item"><a href="#hooks" class="header__link">React Hooks</a></li>
+			<li class="header__item"><a href="#server-components" class="header__link">Server components</a></li>
+			<li class="header__item"><a href="#class-components" class="header__link">Class components</a></li>
+		</ul>
+	</header>
+	<main class="main">
+		<div id="react" class="react">
+			<h1 class="react__title">What React is?</h1>
+			<div class="react__text text">
+				<p>
+					React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3][4] for
+					building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of
+					individual developers and companies.
+				</p>
+				<p>
+					React can be used to develop single-page, mobile, or server-rendered applications with frameworks like
+					Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React
+					applications often rely on libraries for routing and other client-side functionality.
+				</p>
+			</div>
+		</div>
+		<div id="components" class="components">
+			<h2 class="components__title">Components</h2>
+			<img class="components__img" src="img/react-components.png" width="700" alt="React components">
+			<div class="components__text">
+				<p>
+					React code is made of entities called components.These components are modular and
+					reusable.React applications typically consist of many layers of components. The components are
+					rendered to a root element in the DOM using the React DOM library. When rendering a component, values are
+					passed between components through props (short for "properties"). Values internal to a component are called
+					its state.
+				</p>
+				<p>
+					The two primary ways of declaring components in React are through function components and class
+					components.
+				</p>
+			</div>
+		</div>
+		<div id="hooks" class="hooks">
+			<h2 id="hooks__title" class="hooks__title">React hooks</h2>
+			<img class="hooks__img" src="img/react-hooks.jpg" width="700" alt="React hooks">
+			<div class="hooks__text">
+				<p>
+					On February 16, 2019, <span>React 16.8</span> was released to the public, introducing React Hooks.[14] Hooks
+					are functions
+					that let developers "hook into" React state and lifecycle features from function components.[15] Notably,
+					Hooks do not work inside classes — they let developers use more features of React without classes.[16]
+				</p>
+				<p>
+					React provides several built-in Hooks such as useState, useContext, useReducer,
+					useMemo and useEffect.[19][13]: Others are documented in the Hooks API
+					Reference. useState and useEffect, which are the most commonly used, are for controlling
+					state and side effects[10]:respectively.
+				</p>
+			</div>
+		</div>
+		<div id="server-components" class="server-components">
+			<h2 class="server-components__title">Server components</h2>
+			<h3 class="server-components__subtitle">All about server components</h3>
+			<div class="server-components__text">
+				<p>
+					React server components or "RSC"s re function components that run exclusively on the server. The concept
+					was first introduced in the talk <span>Data Fetching</span> with Server Components Though a similar concept to
+					Server Side
+					Rendering, RSCs do not send corresponding JavaScript to the client as no hydration occurs. As a result, they
+					have no access to hooks. However, they may be asynchronous function, allowing them to directly perform
+					asynchronous operations:
+				</p>
+			</div>
+			<span>JUST EXAMPLE №1</span>
+			<span>JUST EXAMPLE №2</span>
+		</div>
+		<div id="class-components" class="class-components">
+			<h2 class="class-components__title class-components__title--orange">Class components</h2>
+			<div class="class-components__text">
+				<p>
+					Class components are declared using ES6 classes. They behave the same way that function components do, but
+					instead of using Hooks to manage state and lifecycle events, they use the lifecycle methods on the
+					React.Component base class.
+				</p>
+				<p>
+					The introduction of React Hooks with React 16.8 in February 2019 allowed developers to manage state and
+					lifecycle behaviors within functional components, reducing the reliance on class components.
+				</p>
+				<p>
+					React Hooks, such as useState for state management and useEffect for side effects, have provided a more
+					streamlined and concise way to build and manage React applications. This shift has led to improved code
+					readability and reusability, encouraging developers to migrate from class components to functional components.
+				</p>
+				<p>
+					This trend aligns with the broader industry movement towards functional programming and modular design. As
+					React continues to evolve, it's essential for developers to consider the benefits of functional components and
+					React Hooks when building new applications or refactoring existing ones.
+				</p>
+			</div>
+			<img class="class-components__img" src="img/class-components.webp" width="700" alt="Class components">
+		</div>
+	</main>
+	<footer class="footer">
+		<h2 class="footer__title">See also</h2>
+		<div class="footer__content">
+			<div class="footer__column">
+				<h3>EXAMPLE №1</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Angular (web framework)</a>
+						<a href="#" class="footer__link">Vue.js</a>
+						<a href="#" class="footer__link">Web Components</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Backbone.js</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Ember.js</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__column">
+				<h3>EXAMPLE №2</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Gatsby (JavaScript framework)</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Next.js</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Svelte</a>
+						<a href="#" class="footer__link footer__link--purple">Comparison of JavaScript-based web frameworks</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+@import url("reset.css");
+
+*{
+	color: darkgoldenrod;
+}
+
+[class*="_title"] {
+	color: black;
+}
+
+h3, h4, h5 {
+	color: darkgreen;
+}
+
+.text p {
+	color: darkcyan;
+}
+
+.header__link {
+	color: blue;
+}
+
+.components .components__title {
+	color: greenyellow;
+}
+
+#hooks__title {
+	color: brown;
+}
+
+#hooks.hooks > .hooks__text span {
+	color: darkorange;
+}
+
+.class-components__title.class-components__title--orange{
+	color: orange;
+}
+
+.server-components__text + span {
+	color: green;
+}
+
+.server-components__text > p > span {
+	color: fuchsia;
+}
+
+.footer__link ~ .footer__link{
+	color: blue;
+}
+
+.footer__link ~ .footer__link.footer__link--purple{
+	color: purple;
+}
