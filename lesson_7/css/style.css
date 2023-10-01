@@ -335,3 +335,11 @@ img {
 	line-height: 1.67;
 	letter-spacing: 0.4px;
 }
+
+.footer__container {
+	padding: 20px 15px;
+}
+
+.footer__copy {
+	text-align: center;
+}
