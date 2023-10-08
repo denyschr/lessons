@@ -1,0 +1,371 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	color: #37393F;
+}
+
+[class*="_container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.caption {
+	display: inline-block;
+	min-height: 22px;
+	padding-left: 18px;
+	font-weight: 500;
+	background: url('../img/box.jpg') left 2px / 12px no-repeat;
+}
+
+.header__container {
+	padding: 70px 15px;
+	text-align: center;
+}
+
+.header__item {
+	display: inline-block;
+}
+
+.header__link {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 10px;
+	background: linear-gradient(214deg, rgba(244,245,244,1) 15%, rgba(190,248,180,1) 54%, rgba(21,46,11,0.10136554621848737) 96%);
+}
+
+.header__item:not(:last-child) {
+	margin-right: 15px;
+}
+
+.hero {
+	padding: 30px 0 80px;
+}
+
+.hero__container {
+	min-height: 800px;
+	background: url('../img/city.jpg') center / cover no-repeat;
+	background-attachment: fixed;
+}
+
+.hero__content {
+	padding: 100px 50px;
+}
+
+.hero__title {
+	margin-bottom: 20px;
+	font-size: 50px;
+	color: #fff;
+}
+
+.hero__text {
+	padding: 15px;
+	color: #fff;
+	background: linear-gradient(to bottom, rgba(31,46,245,1) 28%, rgba(255,29,128,0.10136554621848737) 100%);
+}
+
+.about {
+	padding-bottom: 80px;
+}
+
+.about__container {
+	max-width: 703px;
+}
+
+.about__caption {
+	margin-bottom: 16px;
+}
+
+.about__title {
+	max-width: 418px;
+	margin-bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.about__text {
+	margin-bottom: 23px;
+}
+
+.about__text > p {
+	margin-bottom: 15px;
+	color: #7D7D7D;
+	line-height: 1.46;
+}
+
+.about__list {
+	margin-bottom: 43px;
+}
+
+.about__item {
+	line-height: 1.4;
+	margin-bottom: 23px;
+	padding-left: 35px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	background: url('../img/tick.svg') left center / 27px no-repeat;
+}
+
+.about__points {
+	margin-bottom: 37px;
+}
+
+.about__point {
+	display: inline-block;
+	max-width: 295px;
+	padding: 32px;
+	border: 1px solid #E3E3E3;
+}
+
+.point-about__content--experience {
+	margin-right: 21px;
+}
+
+.point-about__content--experience .point-about__content {
+	background: url('../img/reward.svg') 0 0 / 39px no-repeat;
+}
+
+.point-about__content--winner .point-about__content {
+	background: url('../img/cup.svg') 0 0 / 39px no-repeat;
+}
+
+.point-about__content{
+	min-height: 40px;
+	padding-left: 59px;
+}
+
+.point-about__title {
+	margin-bottom: 3px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.point-about__text {
+	color: #7D7D7D;
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+.about__link {
+	display: inline-block;
+	padding: 22px 27px;
+	background-color: #6B77E5;
+	color: #FFF;
+	text-align: center;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.projects {
+	padding-bottom: 120px;
+}
+
+.projects__container {
+	max-width: 1250px;
+}
+
+.projects__top {
+	max-width: 852px;
+	margin: 0 auto 47px;
+	text-align: center;
+}
+
+.projects__caption {
+	margin-bottom: 14px;
+}
+
+.projects__title {
+	margin-bottom: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.projects__text {
+	color: #7D7D7D;
+	line-height: 1.46;
+}
+
+.projects__row--one {
+	margin-bottom: 58px;
+}
+
+.projects__item {
+	display: inline-block;
+	min-width: 380px;
+	padding-top: 525px;
+	background-size: 380px 500px;
+	background-repeat: no-repeat;
+}
+
+.projects__item:not(:last-child) {
+	margin-right: 34px;
+}
+
+.item-project_01{
+	background-image: url('../img/project01.jpg');
+}
+.item-project_02{
+	background-image: url('../img/project02.jpg');
+}
+.item-project_03{
+	background-image: url('../img/project03.jpg');
+}
+.item-project_04{
+	background-image: url('../img/project04.jpg');
+}
+.item-project_05{
+	background-image: url('../img/project05.jpg');
+}
+.item-project_06{
+	background-image: url('../img/project06.jpg');
+}
+
+.item-project__heading {
+	margin-bottom: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.item-project__date {
+	padding-left: 25px;
+	color: #7D7D7D;
+	font-size: 14px;
+	line-height: 1.46%;
+	background: url('../img/calendar.svg') left center / 22px no-repeat;
+}
+
+.product {
+	padding-bottom: 50px;
+}
+
+.product__container {
+	max-width: 1250px;
+}
+
+.product-top {
+	margin-bottom: 30px;
+}
+
+.product-top__title{
+	min-height: 32px;
+	padding-left: 21px;
+	background: url('../img/strip.svg') left center / 6px 28px no-repeat;
+}
+
+.product-top__title {
+	display: inline-block;
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.19;
+	letter-spacing: 0.56px;
+}
+
+.product__title {
+	margin-bottom: 25px;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+
+.product__descr {
+	margin-bottom: 25px;
+	font-family: "Causten" ,sans-serif;
+	font-size: 20px;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	color: #807D7E;
+}
+
+.product__descr span {
+	font-weight: 700;
+}
+
+.product__descr p {
+	margin-bottom: 20px;
+}
+
+.product__link {
+	font-family: "Core Sans C", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	color: #807D7E;
+}
+
+.shop {
+	padding-bottom: 30px;
+}
+
+.shop__container {
+	max-width: 1270px;
+	border-radius: 10px;
+	font-size: 0;
+}
+
+.shop__left , .shop__right{
+	display: inline-block;
+	min-height: 640px;
+}
+
+.shop__left {
+	max-width: 614px;
+	padding: 183px 74px 174px;
+	background: url('../img/shop-left.jpg') center / cover no-repeat;
+}
+
+.left-shop__title {
+	margin-bottom: 30px;
+	color: #FFF;
+	font-family: 'Core Sans C', sans-serif;
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+}
+
+.left-shop__text {
+	margin-bottom: 50px;
+	color: #FFF;
+	font-family: 'Causten', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.left-shop__link {
+	display: inline-block;
+	font-size: 18px;
+	padding: 12px 44px;
+	border-radius: 8px;
+	background-color: #FFF;
+	color: #3C4242;
+	text-align: center;
+	font-family: 'Causten', sans-serif;
+	font-weight: 600;
+}
+
+.shop__right {
+	min-width: 626px;
+	vertical-align: top;
+	background: url('../img/shop-right.jpg') center / cover no-repeat;
+}
+
+.footer__copy {
+	padding: 15px 0;
+	text-align: center;
+}
