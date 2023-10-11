@@ -1,0 +1,704 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	color: #7D7D7D;
+}
+
+[class*="_container"] {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.consulting-container {
+	max-width: 722px;
+}
+
+.consulting-container > *:last-child {
+	margin-bottom: 0;
+}
+
+.consulting-title {
+	margin-bottom: 10px;
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	text-transform: capitalize;
+}
+
+.consulting-caption {
+	display: inline-block;
+	margin-bottom: 16px;
+	color: #37393F;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.consulting-caption::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-top: -2px;
+	margin-right: 6px;
+	background-color: #40DDB6;
+}
+
+.consulting-text {
+	line-height: 1.46;
+}
+
+/* При додаванні декількох параграфів */
+.consulting-text > *:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.header__container {
+	padding: 40px 50px;
+	text-align: center;
+}
+
+.header__item {
+	display: inline-block;
+}
+
+.header__link {
+	color: #fff;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #6B77E5;
+}
+
+.header__link:hover {
+	background-color: #40DDB6;
+}
+
+.header__item:not(:last-child) {
+	margin-right: 15px;
+}
+
+.chess {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 60px;
+	margin-bottom: 150px;
+	background-color: #ffca67;
+	font-size: 0;
+}
+
+.chess__body {
+	margin-bottom: 20px;
+	border: 4px solid #78473B;
+}
+
+.chess__row--odd > .chess__square:nth-child(odd) {
+	background-color: #78473B;
+
+}
+.chess__row--even > .chess__square:nth-child(even) {
+	background-color: #78473B;
+}
+
+.chess__square {
+	display: inline-block;
+	width: 12.5%;
+	height: 100px;
+	background-color: #ffca67;
+}
+
+.chess__pieces {
+	text-align: center;
+}
+
+.chess__pieces:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.chess__piece {
+	display: inline-block;
+}
+
+.chess__piece:not(:last-child) {
+	margin-right: 25px;
+}
+
+.game-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+
+.game-title {
+	color: rgb(7, 255, 7);
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 45px;
+}
+
+.game-title span {
+	color: red;
+}
+
+.game {
+	min-height: 800px;
+	font-size: 0;
+	background-color: #000;
+}
+
+.game__inline-block {
+	display: inline-block;
+}
+
+.game__box {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(7, 255, 7);
+	border: 2px solid #000;
+	visibility: hidden;
+}
+
+.game__line {
+	visibility: hidden;
+}
+
+.game__line:hover > * {
+	visibility: visible;
+}
+
+.game__box-1 {
+	visibility: visible;
+}
+
+.game__box-1:hover + .game__box-2, .game__box-2:hover{
+	visibility: visible;
+}
+
+.game__box-2:hover + .game__box-3, .game__box-3:hover{
+	visibility: visible;
+}
+
+.game__box-3:hover + .game__box-4, .game__box-4:hover{
+	visibility: visible;
+}
+
+.game__box-4:hover + .game__box-5, .game__box-5:hover{
+	visibility: visible;
+}
+
+.game__box-5:hover + .game__box-6, .game__box-6:hover{
+	visibility: visible;
+}
+
+.game__box-6, .game__box-7, .game__box-8 {
+	margin-left: 150px;
+}
+
+.game__box-6:hover + .game__box-7, .game__box-7:hover{
+	visibility: visible;
+}
+
+.game__box-7:hover + .game__box-8, .game__box-8:hover{
+	visibility: visible;
+}
+
+.game__box-8:hover + .game__box-9, .game__box-9:hover{
+	visibility: visible;
+}
+
+.game__box-9:hover + .game__box-10, .game__box-10:hover{
+	visibility: visible;
+}
+
+.game__box-10:hover + .game__box-11, .game__box-11:hover{
+	visibility: visible;
+}
+
+.game__box-11:hover + .game__box-12, .game__box-12:hover{
+	visibility: visible;
+}
+
+.game__box-12:hover + .game__box-13, .game__box-13:hover{
+	visibility: visible;
+}
+
+.game__box-13 {
+	margin-left: 350px;
+}
+
+.game__box-13:hover ~ .game__line-1 > *, .game__line-1:hover{
+	visibility: visible;
+}
+
+.game__line-1 {
+	margin-left: 300px;
+}
+
+.game__line-1:hover + .game__box-16, .game__box-16:hover {
+	visibility: visible;
+}
+
+.game__box-16, .game__box-17, .game__box-18 {
+	margin-left: 300px;
+}
+
+.game__box-16:hover + .game__box-17, .game__box-17:hover{
+	visibility: visible;
+}
+
+.game__box-17:hover + .game__box-18, .game__box-18:hover{
+	visibility: visible;
+}
+
+.game__box-18:hover + .game__box-19, .game__box-19:hover{
+	visibility: visible;
+}
+
+.game__box-19:hover + .game__box-20, .game__box-20:hover{
+	visibility: visible;
+}
+
+.game__box-20:hover + .game__box-21, .game__box-21:hover{
+	visibility: visible;
+}
+
+.game__box-21:hover + .game__box-22, .game__box-22:hover{
+	visibility: visible;
+}
+
+.game__box-22:hover + .game__box-23, .game__box-23:hover{
+	visibility: visible;
+}
+
+.game__box-23:hover + .game__box-24, .game__box-24:hover{
+	visibility: visible;
+}
+
+.game__box-24, .game__box-25 {
+	margin-left: 550px;
+}
+
+.game__box-24:hover + .game__box-25, .game__box-25:hover{
+	visibility: visible;
+}
+
+.game__box-25:hover ~ .game__line-2 > *, .game__line-2:hover{
+	visibility: visible;
+}
+
+.game__line-2 {
+	margin-left: 500px;
+}
+
+.game__line-2:hover + .game__box-28, .game__box-28:hover {
+	visibility: visible;
+}
+
+.game__box-28:hover + .game__box-29, .game__box-29:hover{
+	visibility: visible;
+}
+
+.game__box-28, .game__box-29 {
+	margin-left: 500px;
+}
+
+.game__box-29:hover + .game__box-30, .game__box-30:hover{
+	visibility: visible;
+}
+
+.game__box-30:hover + .game__box-31, .game__box-31:hover{
+	visibility: visible;
+}
+
+.game__box-31:hover + .game__box-32, .game__box-32:hover{
+	visibility: visible;
+}
+
+.game__box-32:hover + .game__box-33, .game__box-33:hover{
+	visibility: visible;
+}
+
+.game__box-33:hover + .game__box-34, .game__box-34:hover{
+	visibility: visible;
+}
+
+.game__box-34:hover + .game__box-35, .game__box-35:hover{
+	visibility: visible;
+}
+
+.game__box-35:hover + .game__box-36, .game__box-36:hover{
+	visibility: visible;
+}
+
+.game__box-36:hover + .game__box-37, .game__box-37:hover{
+	visibility: visible;
+}
+
+.game__box-37:hover + .game__box-38, .game__box-38:hover{
+	visibility: visible;
+}
+
+.game__box-38:hover + .game__box-39, .game__box-39:hover{
+	visibility: visible;
+}
+
+.game__box-39:hover + .game__box-40, .game__box-40:hover{
+	visibility: visible;
+}
+
+.game__box-40:hover + .game__box-41, .game__box-41:hover{
+	visibility: visible;
+}
+
+.game__box-41 {
+	background-color: red;
+}
+
+.game__door {
+	text-align: right;
+}
+
+.why-us{
+	padding-bottom: 40px;
+}
+
+.why-us__text {
+	margin-bottom: 42px;
+}
+
+.why-us__sub-title {
+	margin-bottom: 12px;
+	color: #6B77E5;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.benefits{
+	padding-bottom: 50px;
+}
+
+.benefits__img {
+	margin-right: 30px;
+}
+
+.benefits__content {
+	display: inline-block;
+	max-width: 325px;
+}
+
+.benefits__content > *:last-child {
+	margin-bottom: 0;
+}
+
+.benefits__title {
+	margin-bottom: 15px;
+	color: #37393F;
+	font-size: 25px;
+	text-transform: none;
+}
+
+.benefits__sub-title {
+	margin-bottom: 20px;
+	color: #40DDB6;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.benefits__list {
+	margin-bottom: 20px;
+}
+
+.benefits__item {
+	min-height: 27px;
+	line-height: 1.2;
+}
+
+.benefits__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.benefits__item::before {
+	content: '';
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	margin-right: 8px;
+	margin-bottom: -7px;
+	background: url('../img/checkmark.svg') center / cover no-repeat;
+}
+
+.faq {
+	padding-bottom: 80px;
+}
+
+.faq__text {
+	margin-bottom: 20px;
+}
+
+.about {
+	padding-bottom: 150px;
+}
+
+.about__title {
+	max-width: 415px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.about__text, .about__items {
+	margin-bottom: 48px;
+}
+
+.about__text > *:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.about__item {
+	padding: 28px 41px 28px 38px;
+	border: 1px solid #E3E3E3;
+}
+
+.about__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.item-about__title {
+	margin-bottom: 12px;
+	color: #37393F;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.item-about__title::before {
+	content: '';
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	margin-bottom: -6px;
+	margin-right: 19px;
+	background: url('../img/checkmark.svg') center / cover no-repeat;
+}
+
+.item-about__text {
+	padding-left: 46px;
+}
+
+.about__link {
+	display: inline-block;
+	margin-bottom: 48px;
+	padding: 23px 35px;
+	background-color: #6B77E5;
+	color: #FFF;
+	text-align: center;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.about__link:hover {
+	background-color: #40DDB6;
+}
+
+.process {
+	padding-bottom: 150px;
+	font-size: 0;
+}
+
+.process__container {
+	max-width: 1250px;
+}
+
+.process__top {
+	margin-bottom: 77px;
+	text-align: center;
+}
+
+.top-process__caption {
+	font-size: 18px;
+}
+
+.top-process__title {
+	margin-bottom: 0;
+	color: #37393F;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.process__item {
+	display: inline-block;
+	max-width: 386px;
+}
+
+.process__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.item-process__content {
+	padding: 58px 43px;
+	background: #F4F4F4;
+	text-align: center;
+}
+
+.item-process__content > *:last-child {
+	margin-bottom: 0;
+}
+
+.item-process__content > *:first-child{
+	margin-top: -15px;
+}
+
+.item-process__content::before {
+	content: '';
+	display: inline-block;
+	width: 72px;
+	height: 72px;
+	margin-top: -95px;
+	margin-bottom: 38px;
+}
+
+.item-process__apointment .item-process__content::before {
+	background: url('../img/calendar.svg') center / cover no-repeat;
+}
+
+.item-process__conclusion .item-process__content::before {
+	background: url('../img/puzzle.svg') center / cover no-repeat;
+}
+
+.item-process__service .item-process__content::before {
+	background: url('../img/service.svg') center / cover no-repeat;
+}
+
+.item-process__title {
+	margin-bottom: 16px;
+	font-size: 25px;
+}
+
+.item-process__text {
+	margin-bottom: 37px;
+	font-size: 18px;
+}
+
+.item-process__link {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #6B77E5;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.item-process__link:hover {
+	color: #40DDB6;
+}
+
+.jewellery {
+	padding-bottom: 50px;
+}
+
+.jewellery__container {
+	max-width: 1260px;
+}
+
+.jewellery__content, .jewellery__box {
+	display: inline-block;
+}
+
+.jewellery__content {
+	max-width: 465px;
+	margin-right: 15px;
+}
+
+.jewellery__title {
+	color: #000;
+	font-family: 'Cormorant Infant', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.jewellery__title::after {
+	content: '';
+	display: block;
+	width: 65%;
+	height: 2px;
+	margin-top: 13px;
+	background-color: #78473B;
+}
+
+.box-jewellery {
+	width: 100%;
+	max-width: 740px;
+	vertical-align: middle;
+}
+
+.box-jewellery__left, .box-jewellery__right {
+	display: inline-block;
+}
+
+.box-jewellery__left > *:last-child, .box-jewellery__right > *:last-child {
+	margin-bottom: 0;
+}
+
+.box-jewellery__left {
+	margin-right: 45px;
+	padding-top: 105px;
+	vertical-align: top;
+}
+
+.box-jewellery__right {
+	padding-top: 50px;
+}
+
+.box-jewellery__img {
+	margin-bottom: 34px;
+	border: 1px solid #000;
+}
+
+.box-jewellery__img img {
+	margin-top: 9px;
+	margin-bottom: -9px;
+	margin-right: -10px;
+	margin-left: 10px;
+}
+
+.box-jewellery__title, .box-jewellery__price {
+	margin-bottom: 5px;
+	color: #000;
+	font-family: 'Cormorant Infant', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.box-jewellery__price {
+	display: inline-block;
+}
+
+.right-box-jewellery__title, .box-jewellery__num {
+	max-width: 340px;
+	color: #000;
+	font-family: 'Cormorant Infant', sans-serif;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.13;
+}
+
+.right-box-jewellery__title {
+	margin-bottom: 40px;
+}
+
+.footer__copy {
+	padding: 15px 0;
+	text-align: center;
+}
