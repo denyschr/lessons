@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 15 (FLEX)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="svg/logo.svg" alt="Company logo">
+				</a>
+				<div class="header__search search-form">
+					<span class="search-form__field">Search</span>
+				</div>
+				<div class="header__actions actions">
+					<div class="actions__language-select language-select">
+						<div class="language-select__current">English (United States)</div>
+						<ul class="language-select__list">
+							<li class="language-select__item">Ukrainian</li>
+							<li class="language-select__item">Polish</li>
+						</ul>
+					</div>
+					<div class="actions__user-block user-block">
+						<a href="#" class="user-block__button button button--fill">Login</a>
+						<a href="#" class="user-block__button button button--clear"><span>Sign Up</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<h1 class="visually-hidden">Euphoria - clothing shop</h1>
+			<div class="page__categories page__offset categories">
+				<div class="categories__container">
+					<h2 class="categories__title title title--strip title--fs34">Categories For Men</h2>
+					<ul class="categories__list">
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/shirts.jpg" alt="Shirts">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Shirts</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/printed-t-shirts.jpg" alt="Printed T-Shirts">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Printed T-Shirts</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/plain-t-shirt.jpg" alt="Plain T-Shirt">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Plain T-Shirt</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/polo-t-shirt.jpg" alt="Polo T-Shirt">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Polo T-Shirt</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/hoodies-sweetshirt.jpg" alt="Hoodies & Sweetshirt">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Hoodies & Sweetshirt</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/jeans.jpg" alt="Jeans">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Jeans</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/active-wear.jpg" alt="Activewear">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Activewear</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="categories__item item-category">
+							<div class="item-category__column">
+								<div class="item-category__img">
+									<img src="img/categories/boxers.jpg" alt="Boxers">
+								</div>
+								<div class="item-category__content">
+									<div class="item-category__text">
+										<h3 class="item-category__name">
+											<a href="#" class="item-category__link">Boxers</a>
+										</h3>
+										<span class="item-category__caption">Explore Now!</span>
+									</div>
+									<div class="item-category__arrow">
+										<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page__wishlist page__offset wishlist">
+				<div class="wishlist__container">
+					<h2 class="wishlist__title title title--fs28">Wishlist</h2>
+					<ul class="wishlist__products">
+						<li class="wishlist__product product-wishlist">
+							<button class="product-wishlist__remove" aria-label="Remove blue flower print crop top from wishlist">
+								<svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+									<g id="close cross">
+										<path id="Icon" d="M18 4L4 18M18 18L4 4.00001" stroke-width="1.5" stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+							<a href="#" class="product-wishlist__img">
+								<img src="img/wishlist/blue-flower-print-crop-top.jpg" alt="Blue Flower Print Crop Top">
+							</a>
+							<div class="product-wishlist__descr">
+								<a href="#" class="product-wishlist__link">Blue Flower Print Crop Top</a>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Color :</span>
+									<span class="product-wishlist__value">Yellow</span>
+								</div>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Quantity :</span>
+									<span class="product-wishlist__value">1</span>
+								</div>
+							</div>
+							<span class="product-wishlist__price">$29.00</span>
+							<button class="product-wishlist__add button button--fill">Add to cart</button>
+						</li>
+						<li class="wishlist__product product-wishlist">
+							<button class="product-wishlist__remove" aria-label="Remove yellow flower print dress from wishlist">
+								<svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+									<g id="close cross">
+										<path id="Icon" d="M18 4L4 18M18 18L4 4.00001" stroke-width="1.5" stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+							<a href="#" class="product-wishlist__img">
+								<img src="img/wishlist/yellow-flower-print-dress.jpg" alt="Yellow flower print dress">
+							</a>
+							<div class="product-wishlist__descr">
+								<a href="#" class="product-wishlist__link">Yellow Flower Print Dress</a>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Color :</span>
+									<span class="product-wishlist__value">Yellow</span>
+								</div>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Quantity :</span>
+									<span class="product-wishlist__value">1</span>
+								</div>
+							</div>
+							<span class="product-wishlist__price">$78.00</span>
+							<button class="product-wishlist__add button button--fill">Add to cart</button>
+						</li>
+						<li class="wishlist__product product-wishlist">
+							<button class="product-wishlist__remove" aria-label="Remove white hoodie long sleeve from wishlist">
+								<svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+									<g id="close cross">
+										<path id="Icon" d="M18 4L4 18M18 18L4 4.00001" stroke-width="1.5" stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+							<a href="#" class="product-wishlist__img">
+								<img src="img/wishlist/white-hoodie-long-sleeve.jpg" alt="White hoodie long sleeve">
+							</a>
+							<div class="product-wishlist__descr">
+								<a href="#" class="product-wishlist__link">White Hoodie long sleeve</a>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Color :</span>
+									<span class="product-wishlist__value">White</span>
+								</div>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Quantity :</span>
+									<span class="product-wishlist__value">1</span>
+								</div>
+							</div>
+							<span class="product-wishlist__price">$134.00</span>
+							<button class="product-wishlist__add button button--fill">Add to cart</button>
+						</li>
+						<li class="wishlist__product product-wishlist">
+							<button class="product-wishlist__remove"
+								aria-label="Remove brown men’s long sleeve T-shirt from wishlist">
+								<svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+									<g id="close cross">
+										<path id="Icon" d="M18 4L4 18M18 18L4 4.00001" stroke-width="1.5" stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+							<a href="#" class="product-wishlist__img">
+								<img src="img/wishlist/brown-men-long-sleeve-t-shirt.jpg" alt="Brown men’s long sleeve T-shirt">
+							</a>
+							<div class="product-wishlist__descr">
+								<a href="#" class="product-wishlist__link">Brown men’s long sleeve T-shirt</a>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Color :</span>
+									<span class="product-wishlist__value">White</span>
+								</div>
+								<div class="product-wishlist__item">
+									<span class="product-wishlist__category">Quantity :</span>
+									<span class="product-wishlist__value">1</span>
+								</div>
+							</div>
+							<span class="product-wishlist__price">$93.00</span>
+							<button class="product-wishlist__add button button--fill">Add to cart</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page__orders page__offset orders">
+				<div class="orders__container">
+					<h2 class="orders__title title title--fs28">My Orders</h2>
+					<div class="tabs">
+						<ul class="tabs__nav">
+							<li class="tabs__item">
+								<button class="tabs__button tabs__button--active">Active</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__button">Cancelled</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__button">Completed</button>
+							</li>
+						</ul>
+						<div class="tabs__content tabs__content--active">
+							<ul class="orders__list">
+								<li class="orders__item item-order">
+									<div class="item-order__about about-order">
+										<h3 class="about-order__title">Order no: #123456789</h3>
+										<div class="about-order__descr">
+											<div class="about-order__rows">
+												<div class="about-order__row">
+													<div class="about-order__item">
+														<span class="about-order__category">Order Date :</span>
+														<span class="about-order__value">2 June 2023 2:40 PM</span>
+													</div>
+													<div class="about-order__item">
+														<span class="about-order__category">Order Status :</span>
+														<span class="about-order__value">Inprogress</span>
+													</div>
+												</div>
+												<div class="about-order__row">
+													<div class="about-order__item">
+														<span class="about-order__category">Estimated Delivery Date :</span>
+														<span class="about-order__value">8 June 2023</span>
+													</div>
+													<div class="about-order__item">
+														<span class="about-order__category">Payment Method :</span>
+														<span class="about-order__value">Cash on delivery</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item-order__product product-order">
+										<a href="#" class="product-order__img">
+											<img src="img/orders/black-printed-t-shirt.jpg" alt="Black printed T-shirt">
+										</a>
+										<div class="product-order__descr">
+											<a href="#" class="product-order__name">Black Printed T-shirt</a>
+											<div class="product-order__additional">
+												<div class="product-order__item">
+													<span class="product-order__category">Colour :</span>
+													<span class="product-order__value">Pink</span>
+												</div>
+												<div class="product-order__item">
+													<span class="product-order__category">Qty :</span>
+													<span class="product-order__value">1</span>
+												</div>
+												<div class="product-order__item">
+													<span class="product-order__price">Total : $23.00</span>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="product-order__button button button--fill">View Detail</a>
+									</div>
+								</li>
+								<li class="orders__item item-order">
+									<div class="item-order__about about-order">
+										<h3 class="about-order__title">Order no: #123456789</h3>
+										<div class="about-order__descr">
+											<div class="about-order__rows">
+												<div class="about-order__row">
+													<div class="about-order__item">
+														<span class="about-order__category">Order Date :</span>
+														<span class="about-order__value">2 June 2023 2:40 PM</span>
+													</div>
+													<div class="about-order__item">
+														<span class="about-order__category">Order Status :</span>
+														<span class="about-order__value">Inprogress</span>
+													</div>
+												</div>
+												<div class="about-order__row">
+													<div class="about-order__item">
+														<span class="about-order__category">Estimated Delivery Date :</span>
+														<span class="about-order__value">8 June 2023</span>
+													</div>
+													<div class="about-order__item">
+														<span class="about-order__category">Payment Method :</span>
+														<span class="about-order__value">Cash on delivery</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item-order__product product-order">
+										<a href="#" class="product-order__img">
+											<img src="img/orders/printed-blue-white-cote.jpg" alt="Printed blue & white Cote">
+										</a>
+										<div class="product-order__descr">
+											<a href="#" class="product-order__name">Printed blue & white Cote</a>
+											<div class="product-order__additional">
+												<div class="product-order__item">
+													<span class="product-order__category">Colour :</span>
+													<span class="product-order__value">White</span>
+												</div>
+												<div class="product-order__item">
+													<span class="product-order__category">Qty :</span>
+													<span class="product-order__value">1</span>
+												</div>
+												<div class="product-order__item">
+													<span class="product-order__price">Total : $143.00</span>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="product-order__button button button--fill">View Detail</a>
+									</div>
+								</li>
+								<li class="orders__item item-order">
+									<div class="item-order__about about-order">
+										<h3 class="about-order__title">Order no: #123456789</h3>
+										<div class="about-order__descr">
+											<div class="about-order__rows">
+												<div class="about-order__row">
+													<div class="about-order__item">
+														<span class="about-order__category">Order Date :</span>
+														<span class="about-order__value">2 June 2023 2:40 PM</span>
+													</div>
+													<div class="about-order__item">
+														<span class="about-order__category">Order Status :</span>
+														<span class="about-order__value">Inprogress</span>
+													</div>
+												</div>
+												<div class="about-order__row">
+													<div class="about-order__item">
+														<span class="about-order__category">Estimated Delivery Date :</span>
+														<span class="about-order__value">8 June 2023</span>
+													</div>
+													<div class="about-order__item">
+														<span class="about-order__category">Payment Method :</span>
+														<span class="about-order__value">Cash on delivery</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item-order__product product-order">
+										<a href="#" class="product-order__img">
+											<img src="img/orders/blue-shirt.jpg" alt="Blue shirt">
+										</a>
+										<div class="product-order__descr">
+											<a href="#" class="product-order__name">Blue Shirt</a>
+											<div class="product-order__additional">
+												<div class="product-order__item">
+													<span class="product-order__category">Colour :</span>
+													<span class="product-order__value">Blue</span>
+												</div>
+												<div class="product-order__item">
+													<span class="product-order__category">Qty :</span>
+													<span class="product-order__value">1</span>
+												</div>
+												<div class="product-order__item">
+													<span class="product-order__price">Total : $93.00</span>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="product-order__button button button--fill">View Detail</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<span class="footer__policy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</span>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
