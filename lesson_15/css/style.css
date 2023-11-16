@@ -65,8 +65,7 @@ body {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 5px;
 	display: inline-block;
 	width: 6px;
 	height: 30px;
