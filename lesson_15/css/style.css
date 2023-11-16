@@ -457,6 +457,7 @@ body {
 }
 
 .product-wishlist__add {
+	flex-shrink: 0;
 	padding-left: 28px;
 	padding-right: 28px;
 }
@@ -608,6 +609,7 @@ body {
 }
 
 .product-order__button {
+	flex-shrink: 0;
 	padding-left: 28px;
 	padding-right: 28px;
 }
