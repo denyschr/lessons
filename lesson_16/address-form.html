@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="menu__nav" title="Main navigation">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link">Credit card</a></li>
+						<li class="menu__item"><a href="address-form.html" class="menu__link _active">Address form</a></li>
+						<li class="menu__item"><a href="checkout-form.html" class="menu__link">Checkout form</a></li>
+						<li class="menu__item"><a href="call-back-form.html" class="menu__link">Call back form</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page address-form">
+			<div class="address-form__address address">
+				<div class="address__container">
+					<div class="address__top">
+						<h1 class="address__title title title--main title--offset">My Info</h1>
+						<h2 class="address__subtitle title title--secondary">Add Address</h2>
+					</div>
+					<form action="#" method="GET" class="address__form form-address">
+						<div class="form-address__body">
+							<div class="form-address__field">
+								<label for="first-name" class="form-address__label">First Name*</label>
+								<input id="first-name" name="first-name" type="text" class="form-address__input"
+									placeholder="First Name" required>
+							</div>
+							<div class="form-address__field">
+								<label for="last-name" class="form-address__label">Last Name*</label>
+								<input id="last-name" name="last-name" type="text" class="form-address__input" placeholder="Last Name"
+									required>
+							</div>
+							<div class="form-address__field">
+								<label for="country" class="form-address__label">Country / Region*</label>
+								<input id="country" name="country" type="text" class="form-address__input"
+									placeholder="Country / Region" required>
+							</div>
+							<div class="form-address__field">
+								<label for="company" class="form-address__label">Company Name</label>
+								<input id="company" name="company" type="text" class="form-address__input"
+									placeholder="Company (optional)">
+							</div>
+							<div class="form-address__field">
+								<label for="address" class="form-address__label">Street Address*</label>
+								<input id="address" name="address" type="text" class="form-address__input"
+									placeholder="House number and street name" required>
+							</div>
+							<div class="form-address__field">
+								<label for="place" class="form-address__label">Apt, suite, unit</label>
+								<input id="place" name="place" type="text" class="form-address__input"
+									placeholder="apartment, suite, unit, etc. (optional)">
+							</div>
+							<div class="form-address__field">
+								<label for="city" class="form-address__label">City*</label>
+								<input id="city" name="city" type="text" class="form-address__input" placeholder="Town / City" required>
+							</div>
+							<div class="form-address__field">
+								<label for="#" class="form-address__label">State*</label>
+								<div class="form-address__dropdown menu-dropdown">
+									<button type="button" class="menu-dropdown__button">State</button>
+									<ul class="menu-dropdown__list">
+										<li class="menu-dropdown__item">Texas</li>
+										<li class="menu-dropdown__item">California</li>
+										<li class="menu-dropdown__item">Nevada</li>
+										<li class="menu-dropdown__item">Georgia</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-address__field">
+								<label for="phone" class="form-address__label">Phone*</label>
+								<input id="phone" name="phone" type="tel" class="form-address__input" placeholder="Phone" required>
+							</div>
+							<div class="form-address__field">
+								<label for="postal-code" class="form-address__label">Postal Code*</label>
+								<input id="postal-code" name="postal-code" type="tel" class="form-address__input"
+									placeholder="Postal Code" required>
+							</div>
+							<div class="form-address__field form-address__field--textarea">
+								<label for="delivery-instruction" class="form-address__label">Delivery Instruction</label>
+								<textarea id="delivery-instruction" name="delivery-instruction" class="form-address__textarea"
+									placeholder="Delivery Instruction"></textarea>
+							</div>
+						</div>
+						<div class="form-address__checkboxes">
+							<div class="form-address__checkbox checkbox">
+								<input id="shipping-address" type="checkbox" name="shipping-address" class="checkbox__input">
+								<label for="shipping-address" class="checkbox__label">Set as default shipping address</label>
+							</div>
+							<div class="form-address__checkbox checkbox">
+								<input id="billing-address" type="checkbox" name="billing-address" class="checkbox__input">
+								<label for="billing-address" class="checkbox__label">Set as default billing address</label>
+							</div>
+						</div>
+						<div class="form-address__actions">
+							<button type="submit" class="form-address__button button button--main">Save</button>
+							<button type="reset" class="form-address__button button button--secondary">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>

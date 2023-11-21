@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Credit card</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="menu__nav" title="Main navigation">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link _active">Credit card</a></li>
+						<li class="menu__item"><a href="address-form.html" class="menu__link">Address form</a></li>
+						<li class="menu__item"><a href="checkout-form.html" class="menu__link">Checkout form</a></li>
+						<li class="menu__item"><a href="call-back-form.html" class="menu__link">Call back form</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page homepage">
+			<h1 class="visually-hidden">Credit card</h1>
+			<div class="homepage__card card">
+				<div class="card__container">
+					<div class="card__blank">
+						<div class="card__inner">
+							<div class="card__item front-card">
+								<div class="front-card__top">
+									<div class="front-card__chip">
+										<img src="img/chip.png" width="40" height="40" alt="Chip">
+									</div>
+									<div class="front-card__payment-system">
+										<img src="img/mastercard.png" width="50" alt="Mastercard">
+									</div>
+								</div>
+								<div id="card-number-text" class="front-card__number">XXXX XXXX XXXX XXXX</div>
+								<div class="front-card__bottom">
+									<div class="front-card__text">
+										<div class="front-card__label">Card Holder</div>
+										<div id="card-holder-text" class="front-card__value">FULL NAME</div>
+									</div>
+									<div class="front-card__text">
+										<div class="front-card__label">Expires</div>
+										<div id="card-validity-text" class="front-card__value">MM/YY</div>
+									</div>
+								</div>
+							</div>
+							<div class="card__item back-card">
+								<div class="back-card__strip"></div>
+								<div class="back-card__body">
+									<div class="back-card__field">
+										<div class="back-card__label">CVV</div>
+										<div id="card-cvv-text" class="back-card__value"></div>
+									</div>
+									<div class="back-card__payment-system">
+										<img src="img/mastercard.png" width="50" alt="Mastercard">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="#" method="POST" id="credit-card" class="card__form form">
+						<div class="form__field field-form">
+							<label for="card-number" class="field-form__label">Card Number</label>
+							<input id="card-number" type="text" name="card-number" class="field-form__input" autocomplete="off"
+								placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required
+								oninput="moveToNextField(this, 'card-holder');"
+								onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+							<span class="field-form__outcome"></span>
+						</div>
+						<div class="form__field field-form">
+							<label for="card-holder" class="field-form__label">Card Holder</label>
+							<input id="card-holder" type="text" name="card-holder" class="field-form__input" placeholder="Owner name"
+								maxlength="50" required
+								onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.key == ' '">
+							<span class="field-form__outcome"></span>
+						</div>
+						<div class="form__block">
+							<div class="form__field field-form">
+								<label for="card-validity" class="field-form__label">Validity</label>
+								<input id="card-validity" type="text" name="card-validity" class="field-form__input" autocomplete="off"
+									placeholder="MM/YY" maxlength="5" required oninput="moveToNextField(this, 'card-cvv')"
+									onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+								<span class="field-form__outcome"></span>
+							</div>
+							<div class="form__field field-form">
+								<div class="field-form__block">
+									<label for="card-cvv" class="field-form__label">CVV</label>
+									<div class="tooltip">
+										<span class="tooltip__text">3-digit code on the back of the card</span>
+									</div>
+								</div>
+								<input id="card-cvv" type="text" name="card-cvv" class="field-form__input" autocomplete="off"
+									placeholder="XXX" maxlength="3" required oninput="moveToNextField(this, 'card-email')"
+									onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+								<span class="field-form__outcome"></span>
+							</div>
+						</div>
+						<div class="form__field field-form">
+							<label for="card-email" class="field-form__label">Email</label>
+							<input id="card-email" type="email" name="card-email" class="field-form__input"
+								placeholder="example@gmail.com" required>
+							<span class="field-form__outcome"></span>
+						</div>
+						<div class="form__field field-form">
+							<label for="card-amount" class="field-form__label">Amount of payment</label>
+							<input id="card-amount" type="text" name="card-amount" class="field-form__input" autocomplete="off"
+								placeholder="0.00" maxlength="9" required
+								onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46">
+							<span class="field-form__outcome"></span>
+						</div>
+						<button type="submit" id="card-button" class="form__button disabled">Pay</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
