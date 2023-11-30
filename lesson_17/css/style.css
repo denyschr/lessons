@@ -417,6 +417,13 @@ body {
 	transition: transform .3s ease-in-out;
 }
 
+
+@media (max-width: 639.98px){
+	.item-gold-earring__content {
+		text-align: center;
+	}
+}
+
 .item-gold-earring__name {
 	margin-bottom: 5px;
 }
